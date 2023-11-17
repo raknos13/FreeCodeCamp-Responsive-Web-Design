@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Fill out user data</h1>
+    <p id="description">Provide your information for the survey</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Your name"
+                    required></label>
+            <label id="email-label">Enter your email: <input id="email" type="email" placeholder="abc@xyz"
+                    required></label>
+            <label id="number-label">Enter a number: <input id="number" type="number" min="18" max="120"
+                    placeholder="25"></label>
+        </fieldset>
+        <fieldset>
+            <select id="dropdown">
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+            <label><input type="radio" name="radio-buttons" value="button-1"> Button 1<label>
+                    <label><input type="radio" name="radio-buttons" value="button-2"> Button 2</label>
+                    <label><input type="checkbox" value="checkbox1"> Value 1</label>
+                    <label><input type="checkbox" value="checkbox2"> Value 2</label>
+                    <label>Enter text: <textarea></textarea></label>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
